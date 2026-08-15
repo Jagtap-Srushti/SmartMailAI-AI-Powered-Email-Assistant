@@ -1,0 +1,441 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Roboto", sans-serif;
+  background: #080b14;
+  color: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(99, 102, 241, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(168, 85, 247, 0.12),
+      transparent 30%
+    ),
+    #080b14;
+}
+
+
+/* Navbar */
+
+.navbar {
+  background: rgba(8, 11, 20, 0.8) !important;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #a855f7
+  );
+
+  box-shadow:
+    0 8px 30px rgba(99, 102, 241, 0.35);
+}
+
+.brand-icon svg {
+  font-size: 22px;
+}
+
+.brand-title {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+}
+
+.brand-subtitle {
+  font-size: 11px !important;
+  color: #8b91a7;
+}
+
+.status-chip {
+  background: rgba(34, 197, 94, 0.1) !important;
+  color: #4ade80 !important;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+
+/* Main */
+
+.main-container {
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ai-chip {
+  margin-bottom: 18px;
+
+  background: rgba(99, 102, 241, 0.1) !important;
+  color: #a5b4fc !important;
+
+  border: 1px solid rgba(129, 140, 248, 0.25);
+}
+
+.hero-title {
+  font-size: clamp(42px, 6vw, 70px) !important;
+  line-height: 1.05 !important;
+  font-weight: 800 !important;
+  letter-spacing: -2px;
+
+  color: #ffffff;
+}
+
+.hero-title span {
+  background: linear-gradient(
+    90deg,
+    #818cf8,
+    #c084fc
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin: 20px auto 0 !important;
+
+  color: #8f96aa;
+
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+}
+
+
+/* Workspace */
+
+.workspace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+
+/* Cards */
+
+.email-card {
+  background: rgba(17, 21, 35, 0.85) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px !important;
+
+  overflow: hidden;
+
+  backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.card-header {
+  min-height: 80px;
+
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.section-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(99, 102, 241, 0.12);
+  color: #818cf8;
+}
+
+.ai-icon {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+}
+
+.card-title {
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+
+.card-description {
+  color: #777f96 !important;
+  font-size: 12px !important;
+  margin-top: 2px !important;
+}
+
+
+/* Inputs */
+
+.email-input {
+  padding: 20px;
+}
+
+.email-input .MuiOutlinedInput-root,
+.output-input .MuiOutlinedInput-root {
+  color: #e5e7eb;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border-radius: 14px;
+}
+
+.email-input textarea,
+.output-input textarea {
+  line-height: 1.7 !important;
+}
+
+.MuiInputLabel-root {
+  color: #7f879d !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.MuiOutlinedInput-root:hover
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(129, 140, 248, 0.4) !important;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #818cf8 !important;
+}
+
+
+/* Controls */
+
+.controls {
+  padding: 0 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.controls .MuiSelect-select {
+  color: #e5e7eb;
+}
+
+.generate-button {
+  height: 50px !important;
+
+  border-radius: 12px !important;
+
+  text-transform: none !important;
+
+  font-weight: 700 !important;
+  font-size: 14px !important;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  ) !important;
+
+  box-shadow:
+    0 10px 30px rgba(99, 102, 241, 0.25) !important;
+}
+
+.generate-button:hover {
+  box-shadow:
+    0 12px 35px rgba(99, 102, 241, 0.4) !important;
+}
+
+
+/* Generated area */
+
+.generated-area {
+  min-height: 350px;
+  padding: 20px;
+}
+
+.output-input {
+  width: 100%;
+}
+
+
+/* Empty state */
+
+.empty-state {
+  min-height: 310px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.empty-icon {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  margin-bottom: 18px;
+
+  background: rgba(129, 140, 248, 0.1);
+  color: #818cf8;
+}
+
+.empty-icon svg {
+  font-size: 30px;
+}
+
+.empty-title {
+  font-weight: 600 !important;
+  color: #d9dce7;
+}
+
+.empty-description {
+  color: #70778b !important;
+  font-size: 13px !important;
+  line-height: 1.7 !important;
+
+  margin-top: 8px !important;
+}
+
+
+/* Loading */
+
+.loading-state {
+  min-height: 310px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  color: #858da4;
+}
+
+
+/* Copy */
+
+.copy-button {
+  margin: 0 20px 20px !important;
+
+  width: calc(100% - 40px);
+
+  height: 46px !important;
+
+  border-radius: 11px !important;
+
+  text-transform: none !important;
+
+  color: #a5b4fc !important;
+
+  border-color: rgba(129, 140, 248, 0.3) !important;
+}
+
+
+/* Footer */
+
+.footer {
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #545c70;
+
+  font-size: 12px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 48px !important;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .main-container {
+    padding-top: 35px;
+  }
+
+  .hero {
+    margin-bottom: 30px;
+  }
+
+  .hero-title {
+    font-size: 40px !important;
+  }
+
+  .hero-description {
+    font-size: 14px !important;
+  }
+
+  .status-chip {
+    display: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+}
