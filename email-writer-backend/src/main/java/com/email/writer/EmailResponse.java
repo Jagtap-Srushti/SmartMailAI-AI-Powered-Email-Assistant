@@ -1,0 +1,16 @@
+package com.email.writer;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class EmailResponse {
+
+    private String reply;
+    private String summary;
+    private String intent;
+    private String priority;
+}
