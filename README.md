@@ -117,7 +117,7 @@ FRONTEND_URL=http://localhost:5173
 **Prerequisites:** Java 21, Maven, Node.js, npm, Chrome, a Gemini API key
 
 ```bash
-git clone https://github.com/Jagtap-Srushti/SmartMail-AI-LLM-Powered-Email-Intelligence-Reply-Assistant.git
+git clone https://github.com/Jagtap-Srushti/SmartMail-AI-Assistant.git
 ```
 
 **Backend**
