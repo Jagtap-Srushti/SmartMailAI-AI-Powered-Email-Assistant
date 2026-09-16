@@ -10,7 +10,7 @@ An AI-powered email assistant that generates professional replies and analyzes e
 
 ## 🎥 Demo
 
-▶️ [Watch the Demo Video](ADD_YOUR_DEMO_VIDEO_LINK_HERE)
+▶️ [Watch the Demo Video](https://drive.google.com/file/d/1HsVyTENPQtCec7cFyK9E6mNxNMEcGuQJ/view?usp=sharing)
 
 ## 📌 Overview
 
